@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orinoco</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- SECTION HEADER -->
+      <header class="row header">
+        <nav class="col navbar navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./images/15675819263013_image1-removebg-preview.png"
+              alt="Logo du site Orinoco"
+              width="100"
+            />
+          </a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Mon Panier</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- MAIN -->
+      <div class="container productCard">
+        <div class="row text-dark cardProductSelect">
+          <div class="card my-3 border-dark bg-dark text-white">
+            <div class="row g-0">
+              <div class="col">
+                <img class="imageDuProduit"/>
+              </div>
+              <div class="col">
+                <div class="card-body">
+                  <h5 class="card-title fs-1 fw-bold titreDuProduit"></h5>
+                  <p class="card-text fs-5 descriptionDuProduit">
+                   
+                  </p>
+                  <p class="card-text">
+                    Prix de l'offre :
+                    <span class="text-danger prixDuProduit fw-bold"></span>
+                  </p>
+                  <form class="d-flex flex-column">
+                    <div class="col d-flex">
+                      <label for="validationCustom04" class="form-label">Choisissez vos lentilles :</label>
+                      <select class="form-select bg-success listeDesOptions" id="validationCustom04" required>
+                      </select>
+                    </div>
+                    <button class="btn btn-danger align-self-end mt-3 fs-4" type="submit" value="Valider">Ajouter au panier</button>
+                  <form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="produit.js"></script>
+  </body>
+</html>

@@ -12,6 +12,7 @@ console.log(imageDuProduit);
 const searchParams = new URLSearchParams(window.location.search);
 // Mettre la réponse dans une variable
 const searchId = searchParams.get("id");
+
 // Récupérer les données de l'api en fonction du produits (_id)
 
 fetch(`http://localhost:3000/api/cameras/${searchId}`)
@@ -28,3 +29,15 @@ fetch(`http://localhost:3000/api/cameras/${searchId}`)
       listeDesOptions.insertAdjacentElement("beforeend", nbOptions);
     }
   });
+
+// selectedIndex & selectedOptions//
+// envoi des options du formulaires //
+const selectElem = document.querySelector("select");
+const buttonPanier = document.querySelector("form button");
+
+buttonPanier.addEventListener("click", (e) => {
+  e.preventDefault();
+  const index = selectElem.selectedOptions;
+  const indexLabel = index[0].label;
+  localStorage.setItem("option", indexLabel);
+});

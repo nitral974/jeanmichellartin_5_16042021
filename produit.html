@@ -36,7 +36,10 @@
               </div>
               <div class="col">
                 <div class="card-body">
-                  <h5 class="card-title fs-1 fw-bold titreDuProduit"></h5>
+                  <form class="d-flex flex-column" method='GET' action="panier.html">
+                  <h5 class="card-title fs-1 fw-bold titreDuProduit">
+                    <input type="text" name="titleyes" id="" disabled value="">
+                  </h5>
                   <p class="card-text fs-5 descriptionDuProduit">
                    
                   </p>
@@ -44,7 +47,6 @@
                     Prix de l'offre :
                     <span class="text-danger prixDuProduit fw-bold"></span>
                   </p>
-                  <form class="d-flex flex-column" method='GET' action="#">
                     <div class="col d-flex">
                       <label for="validationCustom04" class="form-label">Choisissez vos lentilles :</label>
                       <select class="form-select bg-success listeDesOptions" id="validationCustom04" required>

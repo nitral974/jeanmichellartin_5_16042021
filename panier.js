@@ -10,8 +10,6 @@ const produits = {
   prixPanier: (produitPanier.prix / 100).toFixed(2),
 };
 
-// console.log(produits);
-
 sectionPanier.innerHTML += `
 <div class="card mb-3 border-dark bg-dark text-white">
 <div class="row g-0">

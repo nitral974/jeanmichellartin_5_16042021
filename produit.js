@@ -46,7 +46,7 @@ fetch(`http://localhost:3000/api/cameras/${searchId}`)
     buttonPanier.addEventListener("click", () => {
       const index = selectElem.selectedOptions;
       const indexLabel = index[0].label;
-      localStorage.setItem("produitsPanier", JSON.stringify(produit1));
+      localStorage.setItem(`produitsPanier`, JSON.stringify(produit1));
       localStorage.setItem("option", indexLabel);
     });
   });

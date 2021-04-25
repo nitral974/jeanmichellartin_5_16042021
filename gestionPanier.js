@@ -1,5 +1,5 @@
 function recuperationPanier() {
-  const produitPanier = localstorage.getItem("panier");
+  const produitPanier = localStorage.getItem("panier");
   if (produitPanier == null) {
     return [];
   } else {
@@ -9,7 +9,8 @@ function recuperationPanier() {
 
 function ajoutProduit(produit) {
   let panier = recuperationPanier();
-  let produitExistant = panier.find((p) => p._id == produit._id);
+  let produitExistant = panier.find((p) => p.id == produit.id);
+
   if (produitExistant == undefined) {
     produit.quantite = 1;
     panier.push(produit);

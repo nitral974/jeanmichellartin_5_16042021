@@ -36,7 +36,7 @@
               </div>
               <div class="col">
                 <div class="card-body">
-                  <form class="d-flex flex-column" method='GET' action="panier.html">
+                  <form class="d-flex flex-column" method='GET' action="#">
                   <h5 class="card-title fs-1 fw-bold titreDuProduit">
                     <input type="text" name="titleyes" id="" disabled value="">
                   </h5>
@@ -50,6 +50,7 @@
                     <div class="col d-flex">
                       <label for="validationCustom04" class="form-label">Choisissez vos lentilles :</label>
                       <select class="form-select bg-success listeDesOptions" id="validationCustom04" required>
+                        <option>Sélectionnez votre option</option>
                       </select>
                     </div>
                     <button class="btn btn-danger align-self-end mt-3 fs-4 panier" type="submit" value="Valider">Ajouter au panier</button>
@@ -62,5 +63,6 @@
       </div>
     </div>
     <script src="produit.js"></script>
+    <script src="gestionPanier.js"></script>
   </body>
 </html>
